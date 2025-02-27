@@ -85,7 +85,7 @@
 <body>
     <div class="container">
         <div class="editor">
-            <textarea id="htmlInput" placeholder="Type your HTML code here..." spellcheck="false"></textarea>
+            <textarea id="htmlInput" placeholder="Type your HTML code here..." spellcheck="false" autocomplete="off"></textarea>
         </div>
         <div class="splitter" id="splitter"></div>
         <div class="output">
@@ -95,7 +95,7 @@
     <div class="controls">
         <button onclick="document.getElementById('fileInput').click()">Upload</button>
         <input type="file" id="fileInput" style="display:none" accept=".html" onchange="loadFile(event)">
-        <input type="text" id="filename" placeholder="Filename" value="code.html">
+        <input type="text" id="filename" placeholder="Filename" value="code.html" autocomplete="off">
         <button onclick="downloadCode()">Download</button>
     </div>
 
